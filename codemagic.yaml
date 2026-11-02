@@ -18,6 +18,7 @@ workflows:
             -destination 'generic/platform=iOS' \
             -derivedDataPath "$CM_BUILD_DIR/build" \
             CODE_SIGNING_ALLOWED=NO \
+            GENERATE_INFOPLIST_FILE=YES \
             build
 
       - name: Package unsigned IPA
